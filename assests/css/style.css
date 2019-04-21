@@ -81,7 +81,7 @@ html {
 
 /* header starts here */
 
-#name a{
+#name a {
     text-align: center;
 }
 
@@ -131,6 +131,7 @@ html {
     width: 200px;
     filter: drop-shadow(5px 5px 5px #666666);
     margin-top: 200px;
+    z-index: 1000;
 }
 
 #my_face:hover {
@@ -145,11 +146,66 @@ html {
 
 /* logo KR*/
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    /* left: 100%; */
+    margin-top: 250px;
+}
+
+#tt_r #ttt_r {
+    left: 70%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    /* visibility: visible; */
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+#tt_k #ttt_k {
+    right: 100%;
+}
+
+#tt_k #ttt_k::after {
+    left: 100%;
+    border-color: transparent transparent transparent black;
+}
+
 .kr_logo {
     width: 100px;
     filter: drop-shadow(10px 10px 0px #4444dd);
     cursor: pointer;
-    margin: 50px 20px;
+    margin: 250px 0px;
 }
 
 .kr_logo:hover {
