@@ -12,23 +12,25 @@
 
 <body>
     <!-- this is the header with the nav bar in it -->
-    <div class="container">
-        <div class="row" id="header">
-            <div class="col-4">
-                <a id="name">Kai Richardson</a>
+    <div class="container" id="navbar">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3" id="name">
+                <a>Kai Richardson</a>
             </div>
-            <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-2"></div>
+            <div class="col-3">
                 <nav id="nav_1">
-                    <a href="index.html" class="">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="#section_1" class="scrollBtn">About</a>
+                    <a href="#section_2" class="scrollBtn">Portfolio</a>
+                    <a href="#section_3" class="scrollBtn">Contact</a>
                 </nav>
             </div>
+            <div class="col-2"></div>
         </div>
     </div>
 
-    <!-- section one -->
+    <!-- div one -->
     <div id="section_1">
         <div class="container">
             <div class="row">
@@ -50,6 +52,52 @@
         </div>
     </div>
 
+    <div id="section_2">
+        <div class="container">
+            <div id="mainhead">
+                <a>Portfolio</a>
+            </div>
+            <div id="bucket">
+                <a href="#" class="column" id="proj1">
+                    <p>Hangman</p>
+                </a>
+                <a href="#" class="column" id="proj2">
+                    <p>Trivia Game</p>
+                </a>
+                <a href="#" class="column" id="proj3">
+                    <p>Rock Paper Scissors</p>
+                </a>
+                <a href="#" class="column" id="proj4">
+                    <p>RPG Game</p>
+                </a>
+                <a href="#" class="column" id="proj5">
+                    <p>Rutgers Info Widget</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is the main body of the contact area -->
+    <div id="section_3">
+        <div class="container">
+            <div id="mainhead">
+                <a>Contact</a>
+            </div>
+            <form action="#" id="contactform">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Jonh Smith">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="example@email.com">
+
+                <label for="message">Message</label>
+                <textarea type="text" name="message" placeholder="" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
 
     <!-- this is the footer of the page -->
     <footer id="footer">
@@ -58,7 +106,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="./assests/javascript/app.js"></script>
 </body>
 

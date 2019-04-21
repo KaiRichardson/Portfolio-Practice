@@ -79,9 +79,37 @@ html {
 
 /* start of page */
 
-body {}
-
 /* header starts here */
+
+#name a{
+    text-align: center;
+}
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 1000;
+    height: 70px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 /******** section 1 **********/
 
@@ -102,7 +130,7 @@ body {}
     height: 200px;
     width: 200px;
     filter: drop-shadow(5px 5px 5px #666666);
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #my_face:hover {
