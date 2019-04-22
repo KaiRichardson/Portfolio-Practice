@@ -71,12 +71,6 @@ html {
     height: 98%;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
 /* start of page */
 
 /* header starts here */
@@ -94,6 +88,8 @@ html {
     transition: top 0.3s;
     z-index: 1000;
     height: 70px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #navbar a {
@@ -114,13 +110,20 @@ html {
 /******** section 1 **********/
 
 #section_1 {
-    height: 100vw;
+    height: 80vw;
+    width: 100%;
     margin: 0;
     background: url("../images/background.png");
     background-repeat: repeat;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#row_1 {
+    margin-top: 250px;
 }
 
 /* face */
@@ -130,17 +133,14 @@ html {
     height: 200px;
     width: 200px;
     filter: drop-shadow(5px 5px 5px #666666);
-    margin-top: 200px;
-    z-index: 1000;
+    z-index: 999999;
 }
 
 #my_face:hover {
-    cursor: -webkit-grab;
     cursor: grab;
 }
 
 #my_face:active {
-    cursor: -webkit-grabbing;
     cursor: grabbing;
 }
 
@@ -153,9 +153,6 @@ html {
 
 .tooltip .tooltiptext {
     opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
     width: 120px;
     background-color: black;
     color: #fff;
@@ -164,16 +161,26 @@ html {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    top: -5px;
-    /* left: 100%; */
-    margin-top: 250px;
+    right: 170px;
+    top: 100px;
 }
 
-#tt_r #ttt_r {
-    left: 70%;
+.tt_right .ttt_right {
+    left: 170px;
 }
 
-.tooltip .tooltiptext::after {
+.tt_left .ttt_left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.tt_right .ttt_right::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -185,27 +192,55 @@ html {
 }
 
 .tooltip:hover .tooltiptext {
-    /* visibility: visible; */
     opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
-#tt_k #ttt_k {
+.tt_left {
     right: 100%;
+    position: relative;
+    animation-name: k_left;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
-#tt_k #ttt_k::after {
-    left: 100%;
-    border-color: transparent transparent transparent black;
+@keyframes k_left {
+    0% {
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.tt_right {
+    right: 100px;
+    position: relative;
+    animation-name: r_right;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes r_right {
+    0% {
+        right: 200px;
+        top: 0px;
+    }
+    100% {
+        right: -20px;
+        top: 0px;
+    }
 }
 
 .kr_logo {
     width: 100px;
     filter: drop-shadow(10px 10px 0px #4444dd);
     cursor: pointer;
-    margin: 250px 0px;
+    margin-top: 50px;
 }
 
 .kr_logo:hover {
@@ -219,6 +254,23 @@ html {
 }
 
 /******** section 2 **********/
+
+#concrete_bg {
+    height: 1000px;
+    width: 100vw;
+    top: 400px;
+    background: url("../images/concrete_background.png");
+    position: absolute;
+    filter: drop-shadow(10px 10px 5px #666666);
+}
+
+.section_2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */

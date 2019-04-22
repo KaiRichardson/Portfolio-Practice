@@ -12,7 +12,7 @@
 
 <body>
     <!-- this is the header with the nav bar in it -->
-    <div class="container" id="navbar">
+    <div id="navbar">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-3" id="name">
@@ -32,27 +32,26 @@
 
     <!-- div one -->
     <div id="section_1">
-        <div class="container">
-            <div class="row">
+            <div class="row" id="row_1">
                 <div class="col-3"></div>
-                <div class="col-2 tooltip" id="tt_k">
-                    <span class="tooltiptext" id="ttt_k">Tooltip text</span>
+                <div class="col-2 tooltip tt_left">
+                    <span class="tooltiptext ttt_left">Tooltip text</span>
                     <img src="./assests/images/logo_K.png" alt="logo K" class="kr_logo" id="logo_k">
                 </div>
                 <div class="col-2">
                     <img src="./assests/images/my-face-smile-sq.png" alt="My Face" id="my_face">
                 </div>
-                <div class="col-2 tooltip" id="tt_r">
+                <div class="col-2 tooltip tt_right">
+                    <span class="tooltiptext ttt_right">Tooltip text</span>
                     <img src="./assests/images/logo_R.png" alt="logo R" class="kr_logo" id="logo_r">
-                    <span class="tooltiptext" id="ttt_r">Tooltip text</span>
                 </div>
                 <div class="col-3"></div>
             </div>
-        </div>
     </div>
 
+    <div id="concrete_bg"></div>
+
     <div id="section_2">
-        <div class="container">
             <div id="mainhead">
                 <a>Portfolio</a>
             </div>
@@ -73,12 +72,10 @@
                     <p>Rutgers Info Widget</p>
                 </a>
             </div>
-        </div>
     </div>
 
     <!-- this is the main body of the contact area -->
     <div id="section_3">
-        <div class="container">
             <div id="mainhead">
                 <a>Contact</a>
             </div>
@@ -94,7 +91,6 @@
 
                 <input type="submit" value="Submit">
             </form>
-        </div>
     </div>
 
 
