@@ -5,97 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assests/css/reset.css">
-    <link rel="stylesheet" href="assests/css/grid.css">
-    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/reset.css">
+    <link rel="stylesheet" href="./assests/css/flexboxgrid.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
     <title>Kai's Portfolio</title>
 </head>
 
 <body>
-    <!-- this is the header with the nav bar in it -->
-    <div id="navbar">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-3" id="name">
-                <a>Kai Richardson</a>
+    <!-- responsive nav -->
+    <div class="top_nav" id="my_nav">
+        <a href="#div_1" id="home_btn" class="active scrollBtn">Home</a>
+        <a href="#div_2" id="about_btn" class="scrollBtn">About</a>
+        <a href="#div_3" id="portfolio_btn" class="scrollBtn">Portfolio</a>
+        <a href="#div_4" id="contact_btn" class="scrollBtn">Contact</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navResponse()">&#9776;</a>
+    </div>
+
+    <!-- div one: splash page -->
+    <div id="div_1">
+        <div class="container-fluid" id="splash_div">
+            <div class="row center-xs middle-xs">
+                <div class="col-xs tooltip" id="tt_k">
+                    <span class="tooltiptext" id="ttt_k">Hi! Im Kai</span>
+                    <img src="./assests/images/logo_K.png" alt="logo K" class="kr_logo" id="logo_k">
+                </div>
             </div>
-            <div class="col-2"></div>
-            <div class="col-3">
-                <nav id="nav_1">
-                    <a href="#section_1" class="scrollBtn">About</a>
-                    <a href="#section_2" class="scrollBtn">Portfolio</a>
-                    <a href="#section_3" class="scrollBtn">Contact</a>
-                </nav>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs" id="my_face_div">
+                    <img src="./assests/images/my-face-smile-sq.png" alt="My Face" id="my_face">
+                </div>
             </div>
-            <div class="col-2"></div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs tooltip" id="tt_r">
+                    <span class="tooltiptext" id="ttt_r">I've got lots to show you!'</span>
+                    <img src="./assests/images/logo_R.png" alt="logo R" class="kr_logo" id="logo_r">
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- div one -->
-    <div id="section_1">
-            <div class="row" id="row_1">
-                <div class="col-3"></div>
-                <div class="col-2 tooltip tt_left">
-                    <span class="tooltiptext ttt_left">Tooltip text</span>
-                    <img src="./assests/images/logo_K.png" alt="logo K" class="kr_logo" id="logo_k">
+    <!-- <div id="concrete_bg"></div> -->
+
+    <!-- div two: about me -->
+    <div id="div_2">
+        <div class="container-fluid" id="about_div">
+            <div class="row center-xs middle-xs" id="text_head_div">
+                <div class="col-xs">
+                    <br><a class="textbody" id="text_head">About Me</a><br><br>
                 </div>
-                <div class="col-2">
-                    <img src="./assests/images/my-face-smile-sq.png" alt="My Face" id="my_face">
-                </div>
-                <div class="col-2 tooltip tt_right">
-                    <span class="tooltiptext ttt_right">Tooltip text</span>
-                    <img src="./assests/images/logo_R.png" alt="logo R" class="kr_logo" id="logo_r">
-                </div>
-                <div class="col-3"></div>
             </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <p class="textbody">Hi there!</p><br>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <p class="textbody">My name is Kai, this is my portfolio and here’s a little bit about me!</p><br>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <p class="textbody">I am currently getting certified in full stack web development at University of
+                        Washington and will receive my certificate in the end of this summer. While I have a
+                        comprehensive graphic design and front-end background, my emphasis is on back-end web
+                        development. I am classically trained in all adobe, Microsoft and Autodesk products. Upon being
+                        certified, I hope to work for a company that specializes in high level web development and
+                        eventually produce and create pages for a large firm. </p><br>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <p class="textbody">My current position as a Customer Support Specialist for Blueprint Technologies
+                        gives me valuable experience in the tech sector. My reputation as an important team member who
+                        always gets the job done comes from my demonstrated ability to multitask. I've worked on
+                        projects such as drafting company correspondence, preparing data reports for management,
+                        organizing company meetings and off-site events, and helping customers with tricky questions
+                        daily. My experience has taught me the importance of being proactive, and I pride myself on my
+                        ability to adapt to all kinds of situations as they arise.</p><br>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="concrete_bg"></div>
+    <!-- div three: portfolio -->
+    <div id="div_3">
+        <div class="container-fluid" id="about_div">
+            <div class="row center-xs middle-xs" id="text_head_div">
+                <div class="col-xs">
+                    <br><a class="textbody" id="text_head">Portfolio</a><br><br>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <div class="box" id="word_guess">
+                        <button onclick="window.location.href = 'https://kairichardson.github.io/Word-Guess-Game/';"
+                            class="homework_btn top_btn" id="page_1">
+                            <p>Word Guess Game</p>
+                        </button>
+                        <div class="hw_gif_div">
+                            <img src="./assests/images/game_pics/word_guess.gif" alt="word guess gif" class="hw_gif">
+                        </div>
+                        <button onclick="window.location.href = 'https://github.com/KaiRichardson/Word-Guess-Game';"
+                            class="homework_btn bottom_btn" id="github_1">
+                            <p>GitHub Repo</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs">
+                    <div class="box" id="starwars">
+                        <button onclick="window.location.href = 'https://kairichardson.github.io/unit-4-game/';"
+                            class="homework_btn top_btn" id="page_2">
+                            <p>Starwars RPG</p>
+                        </button>
+                        <div class="hw_gif_div">
+                            <img src="./assests/images/game_pics/starwars.gif" alt="star wars gif" class="hw_gif">
+                        </div>
+                        <button onclick="window.location.href = 'https://github.com/KaiRichardson/unit-4-game';"
+                            class="homework_btn bottom_btn" id="github_2">
+                            <p>GitHub Repo</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <div class="box" id="trivia">
+                        <button onclick="window.location.href = 'https://kairichardson.github.io/TriviaGame/';"
+                            class="homework_btn top_btn" id="page_3">
+                            <p>Trivia Game</p>
+                        </button>
+                        <div class="hw_gif_div">
+                            <img src="./assests/images/game_pics/trivia.gif" alt="trivia gif" class="hw_gif">
+                        </div>
+                        <button onclick="window.location.href = 'https://github.com/KaiRichardson/TriviaGame';"
+                            class="homework_btn bottom_btn" id="github_3">
+                            <p>GitHub Repo</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs">
+                    <div class="box" id="giphy_depo">
+                        <button onclick="window.location.href = 'https://kairichardson.github.io/giphy_depo/';"
+                            class="homework_btn top_btn" id="page_4">
+                            <p>Giphy Depo</p>
+                        </button>
+                        <div class="hw_gif_div">
+                            <img src="./assests/images/game_pics/giphy.gif" alt="giphy gif" class="hw_gif">
+                        </div>
+                        <button onclick="window.location.href = 'https://github.com/KaiRichardson/giphy_depo';"
+                            class="homework_btn bottom_btn" id="github_4">
+                            <p>GitHub Repo</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <div class="box" id="train">
+                        <button onclick="window.location.href = 'https://kairichardson.github.io/Train-Schedule/';"
+                            class="homework_btn top_btn" id="page_5">
+                            <p>Train Schedule</p>
+                        </button>
+                        <div class="hw_gif_div">
+                            <img src="./assests/images/game_pics/train.gif" alt="train gif" class="hw_gif">
+                        </div>
+                        <button onclick="window.location.href = 'https://github.com/KaiRichardson/Train-Schedule';"
+                            class="homework_btn bottom_btn" id="github_5">
+                            <p>GitHub Repo</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs">
+                    <div class="box" id="dart_throw">
+                        <button
+                            onclick="window.location.href = 'https://kairichardson.github.io/Project-1_Dart-Throw/';"
+                            class="homework_btn top_btn" id="page_6">
+                            <p>Dart Throw</p>
+                        </button>
+                        <div class="hw_gif_div">
+                            <img src="./assests/images/game_pics/dart_throw.gif" alt="travel gif" class="hw_gif">
+                        </div>
+                        <button
+                            onclick="window.location.href = 'https://github.com/KaiRichardson/Project-1_Dart-Throw';"
+                            class="homework_btn bottom_btn" id="github_6">
+                            <p>GitHub Repo</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- div four: contact me -->
+    <div id="div_4">
+        <div class="container-fluid" id="contact_div">
+            <div class="row center-xs middle-xs" id="text_head_div">
+                <div class="col-xs">
+                    <br><a class="textbody" id="text_head">Contact Me</a><br><br>
+                </div>
+            </div>
+            <div class="row center-xs middle-xs">
+                <div class="col-xs">
+                    <form action="#" id="contactform">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Jonh Smith" class="texty">
 
-    <div id="section_2">
-            <div id="mainhead">
-                <a>Portfolio</a>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="example@email.com" class="texty">
+
+                        <label for="message">Message</label>
+                        <textarea type="text" name="message" placeholder="" style="height:200px" class="texty"></textarea>
+
+                        <input type="submit" value="Submit" class="homework_btn">
+                    </form>
+                </div>
             </div>
-            <div id="bucket">
-                <a href="#" class="column" id="proj1">
-                    <p>Hangman</p>
-                </a>
-                <a href="#" class="column" id="proj2">
-                    <p>Trivia Game</p>
-                </a>
-                <a href="#" class="column" id="proj3">
-                    <p>Rock Paper Scissors</p>
-                </a>
-                <a href="#" class="column" id="proj4">
-                    <p>RPG Game</p>
-                </a>
-                <a href="#" class="column" id="proj5">
-                    <p>Rutgers Info Widget</p>
-                </a>
-            </div>
+        </div>
     </div>
 
-    <!-- this is the main body of the contact area -->
-    <div id="section_3">
-            <div id="mainhead">
-                <a>Contact</a>
-            </div>
-            <form action="#" id="contactform">
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Jonh Smith">
-
-                <label for="email">Email</label>
-                <input type="text" name="email" placeholder="example@email.com">
-
-                <label for="message">Message</label>
-                <textarea type="text" name="message" placeholder="" style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
-    </div>
-
-
-    <!-- this is the footer of the page -->
+    <!-- footer -->
     <footer id="footer">
         <div id="foottext">
             <p>Copyright @</p>
