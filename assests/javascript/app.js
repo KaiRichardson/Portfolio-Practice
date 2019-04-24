@@ -60,36 +60,36 @@ $(".scrollBtn").on("mouseup", function () {
     'slow');
 });
 
+$(document).ready(function() {
+  $('.link_div[href^="http://"]').attr('target','_blank');
+});
+
 $("#my_face").on("click", function () {
   if ($("#my_face").attr("clicked") != "true") {
-
     $("#my_face").attr("src", "./assests/images/my-face-forward-sq.png");
 
     $("#tt_k").animate({
       right: '+=100',
       bottom: '+=100'
-    }, 2000);
-
+    }, 1000);
     $("#tt_r").animate({
       left: '+=100',
       top: '+=100'
-    }, 2000);
+    }, 1000);
 
     $("#my_face").attr("clicked", "true")
 
   } else {
-
     $("#my_face").attr("src", "./assests/images/my-face-smile-sq.png");
 
     $("#tt_k").animate({
       right: '-=100',
       bottom: '-=100'
-    }, 2000);
-
+    }, 1000);
     $("#tt_r").animate({
       left: '-=100',
       top: '-=100'
-    }, 2000);
+    }, 1000);
 
     $("#my_face").attr("clicked", "false")
   }
