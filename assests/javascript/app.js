@@ -1,35 +1,3 @@
-// $("#div_2").slideUp();
-// $("#div_3").slideUp();
-// $("#div_4").slideUp();
-
-// $("#home_btn").on("mousedown", function () {
-//   $("#div_2").slideUp();
-//   $("#div_3").slideUp();
-//   $("#div_4").slideUp();
-// });
-
-// $("#about_btn").on("mousedown", function () {
-//   $("#div_3").slideUp();
-//   $("#div_4").slideUp();
-  
-//   $("#div_2").slideDown("fast");
-// });
-
-// $("#portfolio_btn").on("mousedown", function () {
-//   $("#div_2").slideUp();
-//   $("#div_4").slideUp();
-  
-//   $("#div_3").slideDown("fast");
-// });
-
-// $("#contact_btn").on("mousedown", function () {
-//   $("#div_3").slideUp();
-//   $("#div_2").slideUp();
-  
-//   $("#div_4").slideDown("fast");
-// });
-
-
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {

@@ -393,16 +393,16 @@ body {
 @media only screen and (min-width: 1440px) {
     .homework_btn {
         padding: 10px;
-        width: 300px;
+        width: 400px;
         background-color: #333;
         letter-spacing: 5px;
         box-shadow: 3px 3px 10px #5f5f5f;
-        font-size: 15px;
+        font-size: 20px;
     }
     .hw_gif {
         box-shadow: 3px 3px 10px #5f5f5f;
-        height: 200px;
-        width: 300px;
+        height: 300px;
+        width: 400px;
         object-fit: cover;
     }
     .box {
